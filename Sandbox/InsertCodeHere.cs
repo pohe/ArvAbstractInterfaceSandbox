@@ -59,7 +59,24 @@ namespace Sandbox
             //Console.WriteLine(e.FuldtNavn());    // Mikkel Mikkelsen
 
 
+            List<int> talliste = new List<int>(){ 1, 5, 12, 0, 34, 2 };
+            talliste.Sort();
+            foreach (int i1 in talliste)
+            {
+                Console.WriteLine(i1);
+            }
+            List<Hund> hunde = new List<Hund>();
+            hunde.Add(new Hund("Fido", 20));
+            hunde.Add(new Hund("Sultan", 14));
+            hunde.Add(new Hund("Bjæf", 19));
+            foreach (Hund item in hunde)
+                Console.WriteLine(item.ToString());
 
+            hunde.Sort();
+            Console.WriteLine();
+
+            foreach (Hund item in hunde)
+                Console.WriteLine(item.ToString());
 
 
             // The LAST line of code should be ABOVE this line

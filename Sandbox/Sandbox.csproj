@@ -44,6 +44,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Elev.cs" />
+    <Compile Include="Hund.cs" />
     <Compile Include="IId.cs" />
     <Compile Include="InsertCodeHere.cs" />
     <Compile Include="IntLærer.cs" />
