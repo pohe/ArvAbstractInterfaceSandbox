@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Sandbox
 {
-    public class Person: IId
+    public class Person: IId, IComparable<Person>
     {
         public string Fornavn { get; set; }
         public string Efternavn { get; set; }
@@ -30,6 +30,11 @@ namespace Sandbox
             return Fornavn + " " + Efternavn;
         }
 
+
+        public int CompareTo(Person other)
+        {
+            return this.CprNummer.CompareTo(other.CprNummer);
+        }
 
         public override string ToString()
         {
